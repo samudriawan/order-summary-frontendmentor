@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-[Solution URL](https://your-solution-url.com) |
-[Live Site URL](https://your-live-site-url.com) |
+[Solution URL](https://www.frontendmentor.io/solutions/mobile-first-with-sass-i5OXCRE6o) |
+[Live Site URL](https://samudriawan.github.io/order-summary-frontendmentor/) |
 [Challenge](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj)
 
 ## My process
