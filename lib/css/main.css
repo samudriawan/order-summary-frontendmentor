@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: #e0e8ff;
+  background-image: url(../../images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (min-width: 376px) {
+  body {
+    background-color: #e0e8ff;
+    background-image: url(../../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+.container {
+  position: relative;
+  width: 350px;
+  height: 600px;
+  margin: 2em auto;
+  border-radius: 1.3em;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0.2em 0.5em 1.5em 0 rgba(245, 247, 255, 0.35);
+}
+@media screen and (min-width: 376px) {
+  .container {
+    width: 400px;
+    height: 600px;
+  }
+}
+
+.hero-section img {
+  width: 100%;
+}
+
+.summary-section {
+  margin: 1.5em auto;
+  text-align: center;
+  color: #1f2f56;
+}
+.summary-section h2 {
+  font-weight: 900;
+}
+.summary-section p {
+  padding: 1em 2.7em 0em 2.7em;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 500;
+  color: #7280a7;
+}
+
+.plan {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  width: 85%;
+  height: 90px;
+  border-radius: 0.7em;
+  background-color: #f5f7ff;
+  color: #1f2f56;
+}
+.plan-price {
+  transform: translateX(-1em);
+}
+.plan-price_header {
+  font-weight: 900;
+  padding-bottom: 5px;
+}
+.plan-price p {
+  padding-bottom: 5px;
+  font-size: 16px;
+  color: #7280a7;
+}
+.plan-link a {
+  color: #3829e0;
+  font-weight: 900;
+}
+.plan-link a:hover {
+  color: #7280a7;
+  text-decoration: none;
+}
+
+.btn {
+  display: block;
+  width: 85%;
+  margin: 1.5em auto 0 auto;
+  padding: 1em;
+  border: 0;
+  border-radius: 0.7em;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+  color: #e0e8ff;
+}
+
+.btn-proceed {
+  background-color: #3829e0;
+  box-shadow: 0 0.3em 10px rgba(31, 47, 86, 0.25), 0 1em 10px rgba(31, 47, 86, 0.15);
+}
+.btn-proceed:hover {
+  background-color: #7280a7;
+}
+
+.btn-cancel {
+  margin-top: 0.4em;
+  padding: 1em;
+  text-align: center;
+  color: #7280a7;
+  background-color: transparent;
+}
+.btn-cancel:hover {
+  color: #1f2f56;
+}
+
+.attribution {
+  position: relative;
+  top: 100%;
+  padding: 0.5em;
+  text-align: center;
+  color: #7280a7;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=main.css.map */

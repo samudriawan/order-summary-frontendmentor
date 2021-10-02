@@ -1,0 +1,154 @@
+$primary-color: hsl(245, 75%, 52%); //Bright blue
+$secondary-color: hsl(225, 100%, 94%); //Pale blue
+$neutral-color: hsl(224, 23%, 55%); //Desaturated blue
+$neutral-color-light: hsl(225, 100%, 98%); //Very pale blue
+$neutral-color-dark: hsl(223, 47%, 23%); //Dark blue
+$fs-p: 16px;
+$ff: 'Red Hat Display', sans-serif;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 1440px;
+	margin: 0 auto;
+	font-family: $ff;
+	background-color: $secondary-color;
+	background-image: url(../../images/pattern-background-mobile.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	@media screen and (min-width: 376px) {
+		background-color: $secondary-color;
+		background-image: url(../../images/pattern-background-desktop.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+}
+
+.container {
+	position: relative;
+	width: 350px;
+	height: 600px;
+	margin: 2em auto;
+	border-radius: 1.3em;
+	overflow: hidden;
+	background-color: white;
+	box-shadow: 0.2em 0.5em 1.5em 0 rgba($neutral-color-light, $alpha: 0.35);
+
+	@media screen and (min-width: 376px) {
+		width: 400px;
+		height: 600px;
+	}
+}
+
+.hero-section {
+	img {
+		width: 100%;
+	}
+}
+
+.summary-section {
+	margin: 1.5em auto;
+	text-align: center;
+	color: $neutral-color-dark;
+
+	h2 {
+		font-weight: 900;
+	}
+
+	p {
+		padding: 1em 2.7em 0em 2.7em;
+		line-height: 1.5;
+		font-size: $fs-p;
+		font-weight: 500;
+		color: $neutral-color;
+	}
+}
+
+.plan {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+	width: 85%;
+	height: 90px;
+	border-radius: 0.7em;
+	background-color: $neutral-color-light;
+	color: $neutral-color-dark;
+
+	&-price {
+		transform: translateX(-1em);
+
+		&_header {
+			font-weight: 900;
+			padding-bottom: 5px;
+		}
+
+		p {
+			padding-bottom: 5px;
+			font-size: $fs-p;
+			color: $neutral-color;
+		}
+	}
+
+	&-link {
+		a {
+			color: $primary-color;
+			font-weight: 900;
+
+			&:hover {
+				color: $neutral-color;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.btn {
+	display: block;
+	width: 85%;
+	margin: 1.5em auto 0 auto;
+	padding: 1em;
+	border: 0;
+	border-radius: 0.7em;
+	font-size: $fs-p;
+	font-weight: 900;
+	cursor: pointer;
+	color: $secondary-color;
+}
+
+.btn-proceed {
+	background-color: $primary-color;
+	box-shadow: 0 0.3em 10px rgba($neutral-color-dark, $alpha: 0.25), 0 1em 10px rgba($neutral-color-dark, $alpha: 0.15);
+
+	&:hover {
+		background-color: $neutral-color;
+	}
+}
+.btn-cancel {
+	margin-top: 0.4em;
+	padding: 1em;
+	text-align: center;
+	color: $neutral-color;
+	background-color: transparent;
+
+	&:hover {
+		color: $neutral-color-dark;
+	}
+}
+
+.attribution {
+	position: relative;
+	// bottom: 0;
+	top: 100%;
+	padding: 0.5em;
+	text-align: center;
+	color: $neutral-color;
+	font-size: 0.8em;
+	font-weight: 500;
+}
